@@ -55,7 +55,7 @@ function getLast(array) {
   }
   return undefined;
 }
-let arrayOne = ['one', 'two', 'three'];
+let arrayOne = ['One', 'Two', 'Three'];
 let arrayTwo = []
 console.log(getLast(arrayOne));
 console.log(getLast(arrayTwo));
@@ -64,8 +64,15 @@ console.log(getLast(arrayTwo));
 //    value is found and false otherwise. Use a loop;
 //    DO NOT use Array.includes, Array.indexOf, or Array.find 
 function find(value, array) {
-
+  for(let i =0; i < array.length; i++){
+    if(array[i] === value){
+      return true;
+    }
+  }
+  return false;
 }
+console.log(`Three is found in arrayOne: ${find('Three', arrayOne)}`);
+console.log(`Four is found in arrayOne: ${find('Four', arrayOne)}`);
 
 // ----------------------
 // Stretch Goals
