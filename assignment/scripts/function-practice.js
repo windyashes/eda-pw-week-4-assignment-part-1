@@ -119,6 +119,23 @@ console.log('Positives in numArray: ' + allPositive(numArray));
 //     CodeWars(https://www.codewars.com/). Then describe it 
 //     here in a comment, write the function, and test it!
 
+/*  On codewars, I was given a test to write a function that would
+    return the sum of all multiples of 3 and multiples of 5 below a given number.
+    If a number is both a multiple of 3 and 5, it should only be counted once.
+*/
+
+function multAdd(number){
+  let sum = 0;
+  for(let i =0; i < number; i++){
+    if( i % 3 === 0 || i % 5 === 0){
+      sum += i;
+    }
+  }
+  return sum;
+}
+console.log(`The sum of all multiples of 3 and multiple of 5 below the number 10 should be ${multAdd(10)}.
+This is 3 + 5 + 6 + 9.`);
+
 
 // DO NOT MODIFY
 // Used for automated testing
