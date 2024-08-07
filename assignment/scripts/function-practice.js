@@ -80,9 +80,12 @@ console.log(`Four is found in arrayOne: ${find('Four', arrayOne)}`);
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-
+  if(string.charAt(0)===letter){
+    return true;
+  }
+  return false;
 }
-
+console.log(`Pterodactyl starts with P: ${isFirstLetter('P', 'Pterodactyl')}`);
 
 // 9. Function to return the sum of all numbers in an array
 function sumAll(array) {
