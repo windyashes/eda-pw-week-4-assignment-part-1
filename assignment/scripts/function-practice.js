@@ -28,10 +28,10 @@ function addNumbers(firstNumber, secondNumber) {
 console.log(`4 plus 5 equals ${addNumbers(4,5)}`);
 
 // 4. Function to multiply three numbers & return the result
-function multiplyThree() {
-
+function multiplyThree(numOne, numTwo, numThree) {
+  return numOne*numTwo*numThree;
 }
-
+console.log(`3 times 4 times 5 is ${multiplyThree(3,4,5)}`);
 
 // 5. Function that will return true if a number is positive, 
 //    or greater than zero, and false otherwise
