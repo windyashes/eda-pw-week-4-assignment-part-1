@@ -21,10 +21,11 @@ function helloName(name) {
 console.log(`helloName function: ${helloName('person')}`);
 
 // 3. Function to add two numbers together & return the result
-function addNumbers(firstNumber) {
+function addNumbers(firstNumber, secondNumber) {
   // return firstNumber + secondNumber;
+  return firstNumber + secondNumber;
 }
-
+console.log(`4 plus 5 equals ${addNumbers(4,5)}`);
 
 // 4. Function to multiply three numbers & return the result
 function multiplyThree() {
