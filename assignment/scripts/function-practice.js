@@ -91,16 +91,28 @@ console.log(`Pterodactyl starts with P: ${isFirstLetter('P', 'Pterodactyl')}`);
 function sumAll(array) {
   let sum = 0;
   // TODO: loop to add items
-
+  for(let i = 0; i < array.length; i++){
+    sum += array[i];
+  }
   // TODO: return the sum
+  return sum;
 }
+let numArray = [1,3,-4,7,0,2];
+console.log(`Sum of numArray: ${sumAll(numArray)}`);
 
 // 10. Function to return a new array of all positive (greater than zero)
 //     numbers contained in an input array. If there are no positive numbers
 //     return an empty array. Note: The input array should not change.
-function allPositive() {
-
+function allPositive(array) {
+  let posArray = [];
+  for(let i = 0; i < array.length; i++){
+    if(array[i] > 0){
+      posArray.push(array[i]);
+    }
+  }
+  return posArray;
 }
+console.log('Positives in numArray: ' + allPositive(numArray));
 
 
 // 11. Pick a problem from Edabit(https://edabit.com/) or 
